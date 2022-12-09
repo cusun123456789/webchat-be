@@ -30,6 +30,7 @@ router.post('/login', async(req, res)=> {
     await user.save();
     res.status(200).json(user);
   } catch (e) {
+    
       res.status(400).json(e.message)
   }
 })
